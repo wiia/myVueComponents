@@ -1,7 +1,9 @@
 # myVueComponents
+
 some vue components for PC & mobile
 
 ###for PC
+
 - WeShow.vue
 
 [live demo](https://wiia.github.io/myVueComponents/dist/)
@@ -19,9 +21,13 @@ some vue components for PC & mobile
 
 - PopBanner.vue
 
+pure css tabs
+
 ```
 <pop-banner :is-hidden.sync="popBanner_hidden"></pop-banner>
 ```
+
+![Alt text](./images/tab.gif)
 
 - LargerMsg.vue
 
@@ -33,6 +39,7 @@ some vue components for PC & mobile
 ```
 
 ###for mobile
+
 - AppHeader.vue
 
 ![Alt text](./images/app.gif)
@@ -40,7 +47,16 @@ some vue components for PC & mobile
 - LargerImg.vue
 
 ```
+<larger-img :is-hidden.sync="largerImg_hidden"
+                :index-cur.sync="larger_index"
+                :img-list="post_img"></larger-img>
+```
+
+- SubmitBtn.vue
+
+```
 <submit-btn :url="url"
 			:data="data"></submit-btn>
 ```
+
 ![Alt text](./images/btn.gif)
